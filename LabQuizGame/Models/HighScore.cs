@@ -21,9 +21,9 @@ namespace QuizGame.Models
             Console.WriteLine("\n  H I G H S C O R E\n= = = = = = = = = = =");
 
             var scores = Entries.OrderByDescending(x => x.Score).Take(10).ToArray();
-            for (int i = 1; i < scores.Length; i++)
+            for (int i = 0; i < scores.Length; i++)
             {
-                Console.WriteLine($"{i}. {scores[i].Name}\t{scores[i].Score,3} ({scores[i].Game})");
+                Console.WriteLine($"{i + 1}. {scores[i].Name}\t{scores[i].Score,3} ({scores[i].Game})");
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using QuizGame.Enums;
 using System.Diagnostics;
+using System.Text.Json.Serialization;
 
 namespace QuizGame.Models
 {
@@ -17,6 +18,7 @@ namespace QuizGame.Models
 
         public string ExpectedAnswer { get; set; }
 
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public Difficulty Difficulty { get; set; }
 
         public string Hint { get; set; }
@@ -51,8 +53,8 @@ namespace QuizGame.Models
             if (int.TryParse(input, out int number))
             {
                 // Potentielle IndexOutOfRangeException: Wir muessen pruefen, ob der index innerhalb des Wertebereiches liegt
-                int index = number;
-                if (index > 0 && index < Options.Length)
+                int index = number - 1;
+                if (index >= 0 && index < Options.Length)
                 {
                     string answer = Options[index];
                     if (answer.Equals(ExpectedAnswer, StringComparison.InvariantCultureIgnoreCase))

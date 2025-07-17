@@ -32,6 +32,11 @@ namespace QuizGame
                 quizItems = quizItems.Where(x => x.Difficulty == difficulty);
             }
 
+            // Zu Testzwecken verwenden wir nur die ersten 3 Fragen
+            // Precompiler Anweisung: Wenn wir uns im DEBUG Modus befinden
+#if DEBUG
+            quizItems = quizItems.Take(3);
+#endif
             int i = 0;
             foreach (QuizItem item in quizItems)
             {
@@ -90,18 +95,28 @@ namespace QuizGame
             {
                 var options = new JsonSerializerOptions
                 {
-                    Converters = { }
+                    PropertyNameCaseInsensitive = true,
+                    Converters = { /*new JsonStringEnumConverter()*/ }
                 };
 
-                var json = File.ReadAllText(filePath + ".json");
+                var json = File.ReadAllText(filePath);
                 var result = JsonSerializer.Deserialize<T[]>(json, options);
                 if (result != null)
                 {
                     return result;
                 }
             }
+            else if (!filePath.EndsWith(".json"))
+            {
+                return ReadJsonFile<T>($"{filePath}.json");
+            }
 
-            return null;
+            // default gibt den Standartwert des Object-Typs zurueck
+            // int = 0, float = 0, bool = false, object = null (arrays, strings usw.)
+            //return default;
+
+            // Besser ist es aber ein leeres Array zurueck zu geben
+            return [];
         }
 
         private static void WriteJsonFile(string filePath, List<User> entries)

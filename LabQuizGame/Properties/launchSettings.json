@@ -2,7 +2,7 @@
   "profiles": {
     "QuizGame": {
       "commandName": "Project",
-      "commandLineArgs": "Debugging.json"
+      "commandLineArgs": "Debugging"
     }
   }
 }
