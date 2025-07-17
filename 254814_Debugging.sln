@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58 d17.14
+VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDebug", "HelloDebug\HelloDebug.csproj", "{B86B4B4B-CACC-4E7D-B0F3-0EA99103AAC2}"
 EndProject
@@ -17,6 +17,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M004_Tools", "M004_Tools", "{07553C71-117F-4E75-8105-9D4E271CBE91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingList", "ReadingList\ReadingList.csproj", "{03C75096-2C72-17D0-CC46-24559268FA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabQuizGame", "LabQuizGame\LabQuizGame.csproj", "{8EC01913-0701-03A6-213D-36B34D2F9DCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{03C75096-2C72-17D0-CC46-24559268FA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03C75096-2C72-17D0-CC46-24559268FA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03C75096-2C72-17D0-CC46-24559268FA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC01913-0701-03A6-213D-36B34D2F9DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC01913-0701-03A6-213D-36B34D2F9DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC01913-0701-03A6-213D-36B34D2F9DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC01913-0701-03A6-213D-36B34D2F9DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{B86B4B4B-CACC-4E7D-B0F3-0EA99103AAC2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A63B8E38-F285-4727-B9B0-FE111B5A7943} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{03C75096-2C72-17D0-CC46-24559268FA53} = {07553C71-117F-4E75-8105-9D4E271CBE91}
+		{8EC01913-0701-03A6-213D-36B34D2F9DCF} = {07553C71-117F-4E75-8105-9D4E271CBE91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26D7C066-5FC1-432D-AD33-8837FA43ECAC}

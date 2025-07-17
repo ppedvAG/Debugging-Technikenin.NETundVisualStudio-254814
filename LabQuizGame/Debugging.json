@@ -1,0 +1,446 @@
+﻿[
+  {
+    "question": "Was beschreibt das Fail-Fast-Prinzip in Softwareanwendungen?",
+    "hint": "Es geht um die frühe Erkennung von Fehlern.",
+    "difficulty": "Easy",
+    "options": [
+      "Fehler werden ignoriert, bis sie kritisch werden.",
+      "Fehler werden so früh wie möglich erkannt und gemeldet.",
+      "Das System wird automatisch neugestartet bei Fehlern.",
+      "Alle Fehler werden gesammelt und am Ende ausgegeben."
+    ],
+    "expectedAnswer": "Fehler werden so früh wie möglich erkannt und gemeldet."
+  },
+  {
+    "Question": "Welcher Vorteil ergibt sich durch das Fail-Safe-Prinzip?",
+    "Hint": "Denke an Systemstabilität.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Das System bleibt trotz Fehlern funktionsfähig.",
+      "Fehler können frühzeitig erkannt und behoben werden.",
+      "Das System stürzt sofort ab.",
+      "Fehler werden nicht protokolliert."
+    ],
+    "ExpectedAnswer": "Fehler können frühzeitig erkannt und behoben werden."
+  },
+  {
+    "question": "Welcher Logging-Mechanismus wird in .NET typischerweise via Dependency Injection verwendet?",
+    "hint": "Es ist Teil des Microsoft.Extensions-Namespaces.",
+    "difficulty": "Easy",
+    "options": [
+      "TraceListener",
+      "ILogger",
+      "NLog",
+      "Serilog"
+    ],
+    "expectedAnswer": "ILogger"
+  },
+  {
+    "Question": "Was ist ein typischer Anwendungsfall für Assertion im Code?",
+    "Hint": "Denke an Entwicklungszeit.",
+    "Difficulty": "Easy",
+    "Options": [
+      "Überprüfen von Annahmen während der Entwicklung",
+      "Fehlerbehandlung im Produktivsystem",
+      "Benutzerinteraktion",
+      "Performance-Optimierung"
+    ],
+    "ExpectedAnswer": "Überprüfen von Annahmen während der Entwicklung"
+  },
+  {
+    "Question": "Was versteht man unter einem Listener im Zusammenhang mit Logging?",
+    "Hint": "Er empfängt Log-Nachrichten.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Komponente, die Log-Einträge entgegennimmt und verarbeitet",
+      "Ein Event im Code",
+      "Ein Netzwerkdienst",
+      "Eine Datenbank"
+    ],
+    "ExpectedAnswer": "Komponente, die Log-Einträge entgegennimmt und verarbeitet"
+  },
+  {
+    "Question": "Welcher Listener-Typ schreibt Logs in die Windows-Ereignisanzeige?",
+    "Hint": "Es ist ein spezieller Listener.",
+    "Difficulty": "Medium",
+    "Options": [
+      "EventLogListener",
+      "FileListener",
+      "ConsoleListener",
+      "DatabaseListener"
+    ],
+    "ExpectedAnswer": "EventLogListener"
+  },
+  {
+    "Question": "Was ist das Ziel von Open Telemetry Protocol (OTLP)?",
+    "Hint": "Es geht um Monitoring.",
+    "Difficulty": "Hard",
+    "Options": [
+      "Standardisierte Übertragung von Tracing- und Metrikdaten",
+      "Verschlüsselung von Logdaten",
+      "Fehlerbehandlung",
+      "Testautomatisierung"
+    ],
+    "ExpectedAnswer": "Standardisierte Übertragung von Tracing- und Metrikdaten"
+  },
+  {
+    "Question": "Welches Tool eignet sich besonders für das Analysieren von Speicherlecks in .NET-Anwendungen?",
+    "Hint": "Es geht um Speicher.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Memory Profiler",
+      "SQL Profiler",
+      "File Explorer",
+      "Event Viewer"
+    ],
+    "ExpectedAnswer": "Memory Profiler"
+  },
+  {
+    "Question": "Wofür wird der SQL Profiler verwendet?",
+    "Hint": "Denke an Datenbanken.",
+    "Difficulty": "Easy",
+    "Options": [
+      "Überwachung und Analyse von Datenbankabfragen",
+      "Überwachung von Netzwerktraffic",
+      "Speicheranalyse",
+      "Debugging von UI-Elementen"
+    ],
+    "ExpectedAnswer": "Überwachung und Analyse von Datenbankabfragen"
+  },
+  {
+    "Question": "Was ist ein Breakpoint im Debugging-Kontext?",
+    "Hint": "Er hilft beim Anhalten des Programms.",
+    "Difficulty": "Easy",
+    "Options": [
+      "Markierung, an der die Ausführung gestoppt wird",
+      "Eine Code-Kommentarzeile",
+      "Ein Fehler im Code",
+      "Eine Testmethode"
+    ],
+    "ExpectedAnswer": "Markierung, an der die Ausführung gestoppt wird"
+  },
+  {
+    "Question": "Was ist Remote Debugging?",
+    "Hint": "Debugging auf einem anderen System.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Debugging einer Anwendung auf einem entfernten Rechner",
+      "Debugging von Webanwendungen",
+      "Debugging von Datenbanken",
+      "Debugging von mobilen Apps"
+    ],
+    "ExpectedAnswer": "Debugging einer Anwendung auf einem entfernten Rechner"
+  },
+  {
+    "Question": "Wozu dienen Dump Files?",
+    "Hint": "Sie helfen bei der Fehleranalyse.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Speichern des Speicherabbilds einer Anwendung bei Absturz",
+      "Speichern von Logdateien",
+      "Speichern von Konfigurationsdaten",
+      "Speichern von Backups"
+    ],
+    "ExpectedAnswer": "Speichern des Speicherabbilds einer Anwendung bei Absturz"
+  },
+  {
+    "Question": "Was ermöglicht ein Disassembler wie ILSpy?",
+    "Hint": "Denke an den Code.",
+    "Difficulty": "Hard",
+    "Options": [
+      "Dekompilieren des Intermediate Language (IL) Codes",
+      "Debuggen von SQL-Abfragen",
+      "Erstellen von Logdateien",
+      "Überwachen von Netzwerkverkehr"
+    ],
+    "ExpectedAnswer": "Dekompilieren des Intermediate Language (IL) Codes"
+  },
+  {
+    "Question": "Was ist das Ziel von Obfuscation?",
+    "Hint": "Es geht um Sicherheit.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Erschweren der Rückführung auf den Quellcode",
+      "Verbessern der Performance",
+      "Vereinfachen des Codes",
+      "Automatisches Testen"
+    ],
+    "ExpectedAnswer": "Erschweren der Rückführung auf den Quellcode"
+  },
+  {
+    "Question": "Wofür ist die Sysinternals Suite bekannt?",
+    "Hint": "Tools für Windows.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Systemüberwachung und Analyse",
+      "Webentwicklung",
+      "Grafikbearbeitung",
+      "Textverarbeitung"
+    ],
+    "ExpectedAnswer": "Systemüberwachung und Analyse"
+  },
+  {
+    "Question": "Was ist ein Vorteil von Dependency Injection beim Logging?",
+    "Hint": "Denke an Testbarkeit.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Erleichtert das Austauschen von Logger-Implementierungen",
+      "Erhöht die Performance",
+      "Verringert den Speicherbedarf",
+      "Vereinfacht das Exception-Handling"
+    ],
+    "ExpectedAnswer": "Erleichtert das Austauschen von Logger-Implementierungen"
+  },
+  {
+    "Question": "Welche Strategie empfiehlt sich für die Fehlerbehandlung in .NET?",
+    "Hint": "Denke an Wartbarkeit.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Verwendung von eigenen Exception-Klassen",
+      "Fehler ignorieren",
+      "Fehler in die Konsole schreiben",
+      "Fehler nur im Log speichern"
+    ],
+    "ExpectedAnswer": "Verwendung von eigenen Exception-Klassen"
+  },
+  {
+    "Question": "Was ist ein Vorteil von Unit Tests im Debugging-Prozess?",
+    "Hint": "Denke an Fehlererkennung.",
+    "Difficulty": "Easy",
+    "Options": [
+      "Frühes Erkennen von Fehlern",
+      "Erhöhen die Laufzeit",
+      "Verringern die Codequalität",
+      "Ersetzen das Logging"
+    ],
+    "ExpectedAnswer": "Frühes Erkennen von Fehlern"
+  },
+  {
+    "Question": "Was misst 'Coverage' im Kontext von Tests?",
+    "Hint": "Wie viel Code wird getestet?",
+    "Difficulty": "Medium",
+    "Options": [
+      "Anteil des Codes, der durch Tests abgedeckt wird",
+      "Anzahl der Fehler",
+      "Performance der Anwendung",
+      "Anzahl der Logeinträge"
+    ],
+    "ExpectedAnswer": "Anteil des Codes, der durch Tests abgedeckt wird"
+  },
+  {
+    "Question": "Was ist ein Vorteil von asynchroner Programmierung mit async/await?",
+    "Hint": "Denke an UI-Anwendungen.",
+    "Difficulty": "Medium",
+    "Options": [
+      "UI bleibt reaktionsfähig",
+      "Erhöht die CPU-Auslastung",
+      "Verringert die Anzahl der Threads",
+      "Vereinfacht das Logging"
+    ],
+    "ExpectedAnswer": "UI bleibt reaktionsfähig"
+  },
+  {
+    "Question": "Was unterscheidet Tasks von async/await?",
+    "Hint": "Denke an die Syntax.",
+    "Difficulty": "Medium",
+    "Options": [
+      "async/await vereinfacht die Handhabung von Tasks",
+      "Tasks sind schneller",
+      "Tasks sind nur für Datenbanken",
+      "async/await ist nur für Logging"
+    ],
+    "ExpectedAnswer": "async/await vereinfacht die Handhabung von Tasks"
+  },
+  {
+    "Question": "Wie kann man asynchrone Methoden in WPF nutzen?",
+    "Hint": "UI-Thread beachten.",
+    "Difficulty": "Hard",
+    "Options": [
+      "Mit async/await, um den UI-Thread nicht zu blockieren",
+      "Mit Threads",
+      "Mit Timern",
+      "Mit Events"
+    ],
+    "ExpectedAnswer": "Mit async/await, um den UI-Thread nicht zu blockieren"
+  },
+  {
+    "Question": "Was ist ein Vorteil von Monitoring-Systemen?",
+    "Hint": "Denke an den Betrieb.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Früherkennung von Problemen im Betrieb",
+      "Schnellere Entwicklung",
+      "Bessere Dokumentation",
+      "Weniger Testbedarf"
+    ],
+    "ExpectedAnswer": "Früherkennung von Problemen im Betrieb"
+  },
+  {
+    "Question": "Was ist eine Best Practice beim Logging?",
+    "Hint": "Denke an die Menge der Logs.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Nur relevante Informationen loggen",
+      "Alles loggen",
+      "Nichts loggen",
+      "Nur Fehler loggen"
+    ],
+    "ExpectedAnswer": "Nur relevante Informationen loggen"
+  },
+  {
+    "Question": "Was ist eine Exception?",
+    "Hint": "Fehler im Programm.",
+    "Difficulty": "Easy",
+    "Options": [
+      "Ein zur Laufzeit auftretender Fehler",
+      "Ein Kommentar",
+      "Ein Event",
+      "Eine Variable"
+    ],
+    "ExpectedAnswer": "Ein zur Laufzeit auftretender Fehler"
+  },
+  {
+    "Question": "Was ist ein Vorteil von eigenen Exception-Klassen?",
+    "Hint": "Denke an Klarheit.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Bessere Unterscheidung und Behandlung spezifischer Fehler",
+      "Weniger Code",
+      "Mehr Performance",
+      "Weniger Logging"
+    ],
+    "ExpectedAnswer": "Bessere Unterscheidung und Behandlung spezifischer Fehler"
+  },
+  {
+    "Question": "Was ist das Ziel von Memory Profiling?",
+    "Hint": "Denke an Ressourcen.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Analyse des Speicherverbrauchs und Erkennen von Leaks",
+      "Netzwerküberwachung",
+      "Performance-Messung",
+      "Fehlerbehandlung"
+    ],
+    "ExpectedAnswer": "Analyse des Speicherverbrauchs und Erkennen von Leaks"
+  },
+  {
+    "Question": "Was ist der Vorteil von Breakpoints mit Bedingungen?",
+    "Hint": "Selektives Anhalten.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Das Programm hält nur bei bestimmten Bedingungen an",
+      "Das Programm läuft schneller",
+      "Mehr Log-Ausgaben",
+      "Weniger Exceptions"
+    ],
+    "ExpectedAnswer": "Das Programm hält nur bei bestimmten Bedingungen an"
+  },
+  {
+    "Question": "Was ist Dependency Injection?",
+    "Hint": "Design Pattern.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Ein Entwurfsmuster zur Bereitstellung von Abhängigkeiten",
+      "Eine Art von Exception",
+      "Ein Logging-Mechanismus",
+      "Ein Test-Framework"
+    ],
+    "ExpectedAnswer": "Ein Entwurfsmuster zur Bereitstellung von Abhängigkeiten"
+  },
+  {
+    "Question": "Was ist der Unterschied zwischen Tracing und Logging?",
+    "Hint": "Granularität und Zweck.",
+    "Difficulty": "Hard",
+    "Options": [
+      "Tracing ist detaillierter und für die Fehleranalyse, Logging ist allgemeiner",
+      "Logging ist detaillierter",
+      "Beides ist identisch",
+      "Tracing ist nur für Datenbanken"
+    ],
+    "ExpectedAnswer": "Tracing ist detaillierter und für die Fehleranalyse, Logging ist allgemeiner"
+  },
+  {
+    "Question": "Was ist ein Vorteil von Dump Files bei der Fehlersuche?",
+    "Hint": "Post-mortem Analyse.",
+    "Difficulty": "Medium",
+    "Options": [
+      "Ermöglichen Analyse nach einem Absturz",
+      "Beschleunigen das Programm",
+      "Reduzieren den Speicherbedarf",
+      "Verbessern die Performance"
+    ],
+    "ExpectedAnswer": "Ermöglichen Analyse nach einem Absturz"
+  },
+  {
+    "question": "Welche Datei enthält eine Momentaufnahme eines Prozesszustands bei einem Crash?",
+    "hint": "Diese Datei endet meist auf '.dmp'.",
+    "difficulty": "Medium",
+    "options": [
+      "Trace File",
+      "Log File",
+      "Dump File",
+      "Snapshot File"
+    ],
+    "expectedAnswer": "Dump File"
+  },
+  {
+    "question": "Welches Tool eignet sich besonders gut zur Analyse des Arbeitsspeichers eines .NET-Prozesses?",
+    "hint": "Es wurde von JetBrains entwickelt.",
+    "difficulty": "Hard",
+    "options": [
+      "Process Explorer",
+      "Memory Diagnoser",
+      "dotMemory",
+      "RAM Checker"
+    ],
+    "expectedAnswer": "dotMemory"
+  },
+  {
+    "question": "Welche Aussage beschreibt das AAA-Prinzip beim Testen?",
+    "hint": "Arrange, Act, ...",
+    "difficulty": "Easy",
+    "options": [
+      "Arrange, Assign, Assert",
+      "Assign, Act, Assert",
+      "Arrange, Act, Assert",
+      "Assert, Arrange, Apply"
+    ],
+    "expectedAnswer": "Arrange, Act, Assert"
+  },
+  {
+    "question": "Was sollte beim Schreiben eigener Exceptions beachtet werden?",
+    "hint": "Vererbung von einer Basis-Klasse ist üblich.",
+    "difficulty": "Medium",
+    "options": [
+      "Sie sollten von Exception erben.",
+      "Sie sollten sealed sein.",
+      "Sie sollten keine Nachricht enthalten.",
+      "Sie sollten von Object erben."
+    ],
+    "expectedAnswer": "Sie sollten von Exception erben."
+  },
+  {
+    "question": "Welcher Listener-Typ ermöglicht das Schreiben von Logs in Dateien?",
+    "hint": "Er gehört zur System.Diagnostics-Namespace.",
+    "difficulty": "Easy",
+    "options": [
+      "EventLogListener",
+      "FileListener",
+      "TextWriterTraceListener",
+      "StreamListener"
+    ],
+    "expectedAnswer": "TextWriterTraceListener"
+  },
+  {
+    "question": "Was ist der Vorteil von defensiver Programmierung?",
+    "hint": "Sie erhöht die Stabilität von Code.",
+    "difficulty": "Medium",
+    "options": [
+      "Bessere Performance",
+      "Weniger Code",
+      "Mehr Tests",
+      "Fehler werden frühzeitig abgefangen"
+    ],
+    "expectedAnswer": "Fehler werden frühzeitig abgefangen"
+  }
+]

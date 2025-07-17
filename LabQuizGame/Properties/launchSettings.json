@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuizGame": {
+      "commandName": "Project",
+      "commandLineArgs": "Debugging.json"
+    }
+  }
+}
