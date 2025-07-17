@@ -15,10 +15,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabAssertMe", "LabAssertMe\LabAssertMe.csproj", "{A63B8E38-F285-4727-B9B0-FE111B5A7943}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M004_Tools", "M004_Tools", "{07553C71-117F-4E75-8105-9D4E271CBE91}"
+	ProjectSection(SolutionItems) = preProject
+		TOOLS.md = TOOLS.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingList", "ReadingList\ReadingList.csproj", "{03C75096-2C72-17D0-CC46-24559268FA53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabQuizGame", "LabQuizGame\LabQuizGame.csproj", "{8EC01913-0701-03A6-213D-36B34D2F9DCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M005_Advanced", "M005_Advanced", "{7CBA66BB-F64A-4740-8CC6-C1AD82A60962}"
+	ProjectSection(SolutionItems) = preProject
+		TOOLS_ADVANCED.md = TOOLS_ADVANCED.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
