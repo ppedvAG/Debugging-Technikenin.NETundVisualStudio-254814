@@ -1,0 +1,49 @@
+﻿@page "/customers"
+@using Microsoft.EntityFrameworkCore
+@using Northwind.WebApi.Models
+@attribute [StreamRendering]
+
+<PageTitle>Customers</PageTitle>
+
+@if (model == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>CompanyName</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in model)
+            {
+                <tr>
+                    <td>@item.CustomerId</td>
+                    <td>@item.CompanyName</td>
+                    <td>@item.Country</td>
+                    <td>@item.City</td>
+                    <td>@item.ContactTitle</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@inject IDbContextFactory<NorthwindDbContext> DbFactory
+@code {
+    private Customer[]? model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        model = await context.Customers.ToArrayAsync();
+    }
+}
