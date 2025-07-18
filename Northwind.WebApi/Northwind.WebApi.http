@@ -1,0 +1,6 @@
+@Northwind.WebApi_HostAddress = http://localhost:5255
+
+GET {{Northwind.WebApi_HostAddress}}/api/customers
+Accept: application/json
+
+###

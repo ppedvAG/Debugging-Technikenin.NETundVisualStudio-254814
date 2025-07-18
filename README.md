@@ -32,8 +32,8 @@ Kurs Repository zu Debugging mit Visual Studio der ppedv AG
 - [x] Disassemblierung (ILSpy, dnSpy)
 - [x] Obfuscation / Deobfuscation
 - [x] Sysinternals Suite (Process Explorer etc.)
+- [x] SQL-Profiler mit [Northwind](https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql)
 - [ ] Memory Profiling
-- [ ] SQL-Profiler [Northwind](https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql)
 
 
 ## M006 | Codequalität
