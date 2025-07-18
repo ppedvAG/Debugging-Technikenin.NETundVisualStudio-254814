@@ -3,15 +3,15 @@ Kurs Repository zu Debugging mit Visual Studio der ppedv AG
 
 ## M001 | Grundlagen zu .NET
 
-- [ ] .NET-Evolution
+- [x] .NET-Evolution
 
 ## M002 | Szenarien
 
-- [ ] Verteilte Anwendungen
-- [ ] Fail-Fast vs. Fail-Safe
-- [ ] Web-Umfeld und Services
-- [ ] Best Practices
-- [ ] Assertion
+- [x] Definition Debugging (Präventiv/Proaktiv)
+- [x] Entwicklungsprozess
+- [x] Best Practices: Probleme vorbeugen
+- [x] Debug Assertion
+- [x] Fail-Fast vs. Fail-Safe
 
 ## M003 | Tracing und Logging
 
@@ -22,16 +22,16 @@ Kurs Repository zu Debugging mit Visual Studio der ppedv AG
 
 ## M004 | Debugging Tools
 
-- [ ] Tools und Windows
-- [ ] Breakpoints
-- [ ] Remote Debugging
-- [ ] Dump Files
+- [x] Tools und Windows
+- [x] Breakpoints (Conditional, Action, Data usw.)
+- [x] Remote Debugging
+- [x] Dump Files
 
 ## M005 | Fortgeschrittenes Debugging
 
-- [ ] Disassemblierung (ILSpy, dnSpy)
-- [ ] Obfuscation / Deobfuscation
-- [ ] Sysinternals Suite (Process Explorer etc.)
+- [x] Disassemblierung (ILSpy, dnSpy)
+- [x] Obfuscation / Deobfuscation
+- [x] Sysinternals Suite (Process Explorer etc.)
 - [ ] Memory Profiling
 - [ ] SQL-Profiler [Northwind](https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql)
 
