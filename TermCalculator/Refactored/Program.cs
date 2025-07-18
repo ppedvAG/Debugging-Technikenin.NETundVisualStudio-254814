@@ -1,4 +1,4 @@
-﻿namespace TermCalculator;
+﻿namespace TermCalculator.Refactored;
 
 public enum CalcOperation { Addition = 1, Subtraction, Multiplication, Division }
 
