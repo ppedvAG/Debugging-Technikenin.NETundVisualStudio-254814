@@ -1,0 +1,6 @@
+@HelloLogging.WebApi_HostAddress = http://localhost:5195
+
+GET {{HelloLogging.WebApi_HostAddress}}/weatherforecast?days=5&city=Eisenhuettenstadt
+Accept: application/json
+
+###

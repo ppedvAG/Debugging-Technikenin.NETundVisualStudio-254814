@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M003_Logging", "M003_Loggin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{F5BF0AAF-236E-4055-90AB-DEFD1A78752C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloLogging.WebApi", "HelloLogging.WebApi\HelloLogging.WebApi.csproj", "{A4352AAA-3B60-4A69-8B02-703BAF0A8F4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{F5BF0AAF-236E-4055-90AB-DEFD1A78752C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5BF0AAF-236E-4055-90AB-DEFD1A78752C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5BF0AAF-236E-4055-90AB-DEFD1A78752C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4352AAA-3B60-4A69-8B02-703BAF0A8F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4352AAA-3B60-4A69-8B02-703BAF0A8F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4352AAA-3B60-4A69-8B02-703BAF0A8F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4352AAA-3B60-4A69-8B02-703BAF0A8F4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{03C75096-2C72-17D0-CC46-24559268FA53} = {07553C71-117F-4E75-8105-9D4E271CBE91}
 		{8EC01913-0701-03A6-213D-36B34D2F9DCF} = {07553C71-117F-4E75-8105-9D4E271CBE91}
 		{F5BF0AAF-236E-4055-90AB-DEFD1A78752C} = {87444EFC-23BC-405D-AEE6-7D01E2A63B00}
+		{A4352AAA-3B60-4A69-8B02-703BAF0A8F4E} = {87444EFC-23BC-405D-AEE6-7D01E2A63B00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26D7C066-5FC1-432D-AD33-8837FA43ECAC}
