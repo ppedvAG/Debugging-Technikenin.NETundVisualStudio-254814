@@ -1,0 +1,6 @@
+@LabSeriLog_HostAddress = http://localhost:5209
+
+GET {{LabSeriLog_HostAddress}}/weatherforecast/London/5
+Accept: application/json
+
+###
