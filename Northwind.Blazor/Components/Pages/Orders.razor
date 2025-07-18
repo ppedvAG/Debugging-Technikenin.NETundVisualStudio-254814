@@ -1,0 +1,71 @@
+﻿@page "/orders"
+@page "/orders/{CustomerId}"
+@page "/orders/range/{StartDate:datetime}/{EndDate:datetime}"
+
+@using Microsoft.EntityFrameworkCore
+@using Northwind.WebApi.Models
+@inject IDbContextFactory<NorthwindDbContext> DbFactory
+
+<PageTitle>Orders</PageTitle>
+
+<h3>Bestellungen</h3>
+
+@if (orders == null)
+{
+    <p><em>Daten werden geladen...</em></p>
+}
+else if (!orders.Any())
+{
+    <p><em>Keine Bestellungen gefunden.</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>OrderId</th>
+                <th>CustomerId</th>
+                <th>OrderDate</th>
+                <th>ShipCountry</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in orders)
+            {
+                <tr>
+                    <td>@item.OrderId</td>
+                    <td>@item.CustomerId</td>
+                    <td>@item.OrderDate?.ToShortDateString()</td>
+                    <td>@item.ShipCountry</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Order> orders;
+
+    [Parameter] public string? CustomerId { get; set; }
+    [Parameter] public DateTime? StartDate { get; set; }
+    [Parameter] public DateTime? EndDate { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        var query = context.Orders.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(CustomerId))
+        {
+            query = query.Where(o => o.CustomerId == CustomerId);
+        }
+
+        if (StartDate.HasValue && EndDate.HasValue)
+        {
+            query = query.Where(o => o.OrderDate >= StartDate && o.OrderDate <= EndDate);
+        }
+
+        orders = await query.ToListAsync();
+    }
+}

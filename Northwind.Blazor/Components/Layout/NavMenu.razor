@@ -22,8 +22,32 @@
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="customers">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Customers
+                <i class="bi bi-people"></i> Alle Kunden
             </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink href="/customers/Germany" class="nav-link">
+                <i class="bi bi-geo-alt"></i> Deutsche Kunden
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink href="/orders" class="nav-link">
+                <i class="bi bi-list-check"></i> Alle Bestellungen
+            </NavLink>
+        </div>
+        
+        <div class="nav-item px-3">
+            <NavLink href="/orders/ALFKI" class="nav-link">
+                <i class="bi bi-person-lines-fill"></i> Bestellungen von ALFKI
+            </NavLink>
+        </div>
+        
+        <div class="nav-item px-3">
+            <NavLink href="/orders/range/1998-05-01/1998-06-01" class="nav-link text-nowrap">
+                <i class="bi bi-calendar-range"></i> Bestellungen Mai '98
+            </NavLink>        
         </div>
     </nav>
 </div>

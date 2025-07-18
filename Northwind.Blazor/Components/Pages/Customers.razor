@@ -1,20 +1,26 @@
 ﻿@page "/customers"
+@page "/customers/{Country}"
+
 @using Microsoft.EntityFrameworkCore
 @using Northwind.WebApi.Models
 @attribute [StreamRendering]
 
 <PageTitle>Customers</PageTitle>
 
-@if (model == null)
+@if (customers == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>Daten werden geladen...</em></p>
+}
+else if (!customers.Any())
+{
+    <p><em>Keine Kunden gefunden.</em></p>
 }
 else
 {
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>CustomerId</th>
                 <th>CompanyName</th>
                 <th>Country</th>
                 <th>City</th>
@@ -22,7 +28,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in model)
+            @foreach (var item in customers)
             {
                 <tr>
                     <td>@item.CustomerId</td>
@@ -38,12 +44,23 @@ else
 
 @inject IDbContextFactory<NorthwindDbContext> DbFactory
 @code {
-    private Customer[]? model;
+    private List<Customer>? customers;
 
-    protected override async Task OnInitializedAsync()
+    [Parameter] public string? Country { get; set; }
+
+    protected override async Task OnParametersSetAsync()
     {
         using var context = DbFactory.CreateDbContext();
-        // Simulate asynchronous loading to demonstrate streaming rendering
-        model = await context.Customers.ToArrayAsync();
+
+        if (string.IsNullOrWhiteSpace(Country))
+        {
+            customers = await context.Customers.ToListAsync();
+        }
+        else
+        {
+            customers = await context.Customers
+                .Where(c => c.Country == Country)
+                .ToListAsync();
+        }
     }
 }
