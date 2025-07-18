@@ -68,16 +68,11 @@ namespace DependencyInjection
             // https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?tabs=aspnetcore2x
             var services = new ServiceCollection();
 
-            // Transient ist das Standardszenario: Beim Aufloesen der Abhaengigkeit wird immer eine neue Instanz erzeugt
-            services.AddTransient<IShoppingService, ShoppingService>();
+            // Aufruf einer statischen Methode
+            SetupServicesExtension.AddShoppingServices(services);
 
-            // Bei Scoped wird jedes mal eine neue Instanz innerhalb eines Scopes erzeugt (bei Web Anwendungen je Request)
-            services.AddScoped<IPaymentService, PaymentService>();
-
-            // Eine Instanz wird nur einmal erzeugt fuer den gesamten Lebenszyklus der Anwendung (verhaelt sich wie static)
-            // Kann sehr problematisch bei Datenbankzugriff oder Dateizugriff sein, weil Verbindung nie geschlossen wird
-            // Singleton Design Pattern https://refactoring.guru/design-patterns/singleton
-            services.AddSingleton<UserSettings>();
+            // Aufruf als Extension-Method
+            services.AddShoppingServices();
 
             var serviceProvider = services.BuildServiceProvider();
             return serviceProvider;
