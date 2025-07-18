@@ -40,6 +40,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebApi", "Northwi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Blazor", "Northwind.Blazor\Northwind.Blazor.csproj", "{C77A0848-8689-40CF-964A-6AD592A0F949}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M006_Fehlerbehandlung", "M006_Fehlerbehandlung", "{7C7BEAC1-0395-494D-BFB2-726F823BE34C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermCalculator", "TermCalculator\TermCalculator.csproj", "{D9292049-CC52-4A1D-AD73-81B8DCE853C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +86,10 @@ Global
 		{C77A0848-8689-40CF-964A-6AD592A0F949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C77A0848-8689-40CF-964A-6AD592A0F949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C77A0848-8689-40CF-964A-6AD592A0F949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9292049-CC52-4A1D-AD73-81B8DCE853C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9292049-CC52-4A1D-AD73-81B8DCE853C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9292049-CC52-4A1D-AD73-81B8DCE853C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9292049-CC52-4A1D-AD73-81B8DCE853C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,7 @@ Global
 		{622CFE34-76EB-3CEE-A8D7-4BCF94E40328} = {87444EFC-23BC-405D-AEE6-7D01E2A63B00}
 		{20F2F1D8-C96B-4104-BC03-793F783CD991} = {7CBA66BB-F64A-4740-8CC6-C1AD82A60962}
 		{C77A0848-8689-40CF-964A-6AD592A0F949} = {7CBA66BB-F64A-4740-8CC6-C1AD82A60962}
+		{D9292049-CC52-4A1D-AD73-81B8DCE853C5} = {7C7BEAC1-0395-494D-BFB2-726F823BE34C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26D7C066-5FC1-432D-AD33-8837FA43ECAC}
